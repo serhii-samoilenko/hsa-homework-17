@@ -1,0 +1,29 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+max_line_length = 140
+indent_style = space
+indent_size = 4
+tab_width = 4
+insert_final_newline = true
+
+[*.java]
+ij_java_class_count_to_use_import_on_demand = 9999
+ij_java_names_count_to_use_import_on_demand = 9999
+
+[{*.kt,*.kts}]
+ij_kotlin_code_style_defaults = kotlin_official
+ij_kotlin_name_count_to_use_star_import = 9999
+ij_kotlin_name_count_to_use_star_import_for_members = 9999
+
+[*.{yaml,yml}]
+indent_size = 2
+ij_yaml_keep_indents_on_empty_lines = false
+
+[*.json]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
