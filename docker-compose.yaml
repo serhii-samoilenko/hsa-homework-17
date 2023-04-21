@@ -61,9 +61,9 @@ services:
   slowloris:
     image: aminvakil/slowloris:latest
     container_name: slowloris
-    command: [ "-p", "8080", "-s", "1024", "nginx" ]
+    command: [ "-s", "1024", "nginx", "-p", "8080" ]
 
   syn-flood:
     image: utkudarilmaz/hping3:latest
-    container_name: tcp-syn-flood
+    container_name: syn-flood
     command: [ "--rand-source", "-S", "--flood", "nginx", "-p", "8080" ]
